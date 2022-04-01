@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const DISCORD_TOKEN = 'OTM0NTQzNzAyODM4MzcwNDE0.YexnpQ.AAKWb3z0ubcEPg6GhLRwzjbtCzE' //process.env.DISCORD_TOKEN;
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 
 const Discord = require('discord.js');
 const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES] });
